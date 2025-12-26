@@ -1,0 +1,39 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  # MySQL 데이터베이스 (운영용)
+  datasource:
+    url: jdbc:mysql://${DB_HOST}:3306/badhabitzero
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  # H2 콘솔 비활성화 (보안)
+  h2:
+    console:
+      enabled: false
+
+  jpa:
+    hibernate:
+      ddl-auto: validate  # 테이블 자동 생성 안 함, 스키마 검증만
+    show-sql: false
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 86400000
+
+# CORS 설정 (운영) - 실제 도메인으로 변경 필요
+cors:
+  allowed-origins:
+    - https://badhabitzero.com (test)
+    - https://www.badhabitzero.com (test)
+    - https://app.badhabitzero.com (test)
+
+# Swagger 비활성화 (운영에서는 보안상 끄기)
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false

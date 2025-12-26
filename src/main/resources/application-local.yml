@@ -1,0 +1,47 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  # H2 인메모리 데이터베이스 (개발용)
+  datasource:
+    url: jdbc:h2:mem:badhabitzero
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  # H2 웹 콘솔 (개발 환경에서만 사용)
+  h2:
+    console:
+      enabled: true          # 콘솔 활성화
+      path: /h2-console      # 접속 경로
+      settings:
+        web-allow-others: true  # 다른 IP에서도 접속 허용 (개발용)
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop  # 앱 시작 시 테이블 생성, 종료 시 삭제
+    show-sql: true           # SQL 쿼리 로그 출력
+
+jwt:
+  secret: local-dev-secret-key-must-be-at-least-256-bits-long-for-security
+  expiration: 86400000  # 24시간 (밀리초)
+
+# CORS 설정 (로컬)
+cors:
+  allowed-origins:
+    - http://localhost:3000
+    - http://localhost:8081
+    - http://localhost:19006
+    - exp://localhost:8081
+
+# Swagger 설정
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html           # Swagger UI 경로
+    tags-sorter: alpha               # 태그 알파벳 정렬
+    operations-sorter: alpha         # API 알파벳 정렬
+  api-docs:
+    path: /v3/api-docs               # API 문서 JSON 경로
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
