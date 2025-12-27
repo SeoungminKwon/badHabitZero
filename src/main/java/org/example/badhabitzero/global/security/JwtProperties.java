@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "jwt")  // application.yml의 jwt.* 값 바인딩
 public class JwtProperties {
 
-    private String secret;      // 비밀키
-    private long expiration;    // 만료 시간 (밀리초)
+    private String secret;
+    private long accessExpiration;
+    private long refreshExpiration;
 }

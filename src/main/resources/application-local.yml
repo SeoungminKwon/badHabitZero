@@ -3,31 +3,39 @@ spring:
     activate:
       on-profile: local
 
-  # H2 인메모리 데이터베이스 (개발용)
+  # MySQL 데이터베이스
   datasource:
-    url: jdbc:h2:mem:badhabitzero
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
-
-  # H2 웹 콘솔 (개발 환경에서만 사용)
-  h2:
-    console:
-      enabled: true          # 콘솔 활성화
-      path: /h2-console      # 접속 경로
-      settings:
-        web-allow-others: true  # 다른 IP에서도 접속 허용 (개발용)
+    url: jdbc:mysql://localhost:3306/badhabitzero?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root1234
 
   jpa:
+    open-in-view: false
     hibernate:
-      ddl-auto: create-drop  # 앱 시작 시 테이블 생성, 종료 시 삭제
-    show-sql: true           # SQL 쿼리 로그 출력
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  # H2 Console 비활성화
+  h2:
+    console:
+      enabled: false
 
 jwt:
   secret: local-dev-secret-key-must-be-at-least-256-bits-long-for-security
-  expiration: 86400000  # 24시간 (밀리초)
+  access-expiration: 1800000      # 30분
+  refresh-expiration: 604800000   # 7일
 
-# CORS 설정 (로컬)
+# 카카오 OAuth 설정
+kakao:
+  client-id: ${KAKAO_CLIENT_ID}
+  client-secret: ${KAKAO_CLIENT_SECRET}
+  redirect-uri: http://localhost:8080/api/auth/kakao/callback
+
 cors:
   allowed-origins:
     - http://localhost:3000
@@ -38,10 +46,10 @@ cors:
 # Swagger 설정
 springdoc:
   swagger-ui:
-    path: /swagger-ui.html           # Swagger UI 경로
-    tags-sorter: alpha               # 태그 알파벳 정렬
-    operations-sorter: alpha         # API 알파벳 정렬
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
   api-docs:
-    path: /v3/api-docs               # API 문서 JSON 경로
+    path: /v3/api-docs
   default-consumes-media-type: application/json
   default-produces-media-type: application/json

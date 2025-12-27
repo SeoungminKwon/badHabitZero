@@ -39,7 +39,7 @@ public class ApiResponse<T> {
     }
 
     // 메시지만 반환 (데이터 없음)
-    public static ApiResponse<Void> success(String message) {
+    public static ApiResponse<Void> successWithMessage(String message) {
         return ApiResponse.<Void>builder()
                 .success(true)
                 .message(message)

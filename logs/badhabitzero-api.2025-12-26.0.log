@@ -1,0 +1,4 @@
+2025-12-26 15:06:05.122 [http-nio-8080-exec-8] INFO  API_LOG - [da1f1e73] ▶ GET /api/test/health
+2025-12-26 15:06:05.130 [http-nio-8080-exec-8] INFO  API_LOG - [da1f1e73] ◀ 200 | 8ms | Body: {"message":"BadHabitZero API is running!","status":"OK"}
+2025-12-26 17:06:00.182 [http-nio-8080-exec-3] INFO  API_LOG - [3f5ab41d] ▶ GET /api/test/health
+2025-12-26 17:06:00.248 [http-nio-8080-exec-3] INFO  API_LOG - [3f5ab41d] ◀ 200 | 65ms | Body: {"message":"BadHabitZero API is running!","status":"OK"}

@@ -25,7 +25,7 @@ public class JwtTokenProvider {
     // ========== 토큰 생성 ==========
     public String createToken(Long userId, String email) {
         Date now = new Date();
-        Date expiry = new Date(now.getTime() + jwtProperties.getExpiration());
+        Date expiry = new Date(now.getTime() + jwtProperties.getAccessExpiration());
 
         return Jwts.builder()
                 .subject(String.valueOf(userId))           // 토큰 주체 (사용자 ID)
