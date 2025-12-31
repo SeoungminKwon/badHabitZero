@@ -53,6 +53,9 @@ public class SecurityConfig {
                         .requestMatchers("/swagger-resources/**").permitAll()
                         .requestMatchers("/webjars/**").permitAll()
 
+                        //ai - test 경로
+                        .requestMatchers("/api/ai/**").permitAll()
+
 
                         .requestMatchers("/h2-console/**").permitAll()    // H2 Console (개발용)
                         // 나머지는 인증 필요

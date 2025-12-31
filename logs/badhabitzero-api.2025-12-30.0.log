@@ -1,0 +1,4 @@
+2025-12-30 18:21:55.068 [http-nio-8080-exec-1] INFO  API_LOG - [60caf6cd] ▶ POST /api/ai/test
+2025-12-30 18:21:58.303 [http-nio-8080-exec-1] INFO  API_LOG - [60caf6cd] ◀ 200 | 3234ms | Body: {"success":true,"data":"안녕!"}
+2025-12-30 18:22:19.642 [http-nio-8080-exec-2] INFO  API_LOG - [6732e762] ▶ POST /api/ai/test
+2025-12-30 18:22:28.352 [http-nio-8080-exec-2] INFO  API_LOG - [6732e762] ◀ 200 | 8709ms | Body: {"success":true,"data":"\"뭐하는 중이야?\"는 상대방에게 현재 무엇을 하고 있는지 묻는 비격식적인 질문입니다.\n\n저는 인공지능이기 때문에 특별히 무언가를 '하고' 있지는 않지만, 지금은 **당신의 질문에 답변하고 있어요!**\n\n일반적으로 사람들이 이 질문을 받았을 때 할 수 있는 답변들은 다음과 같습니다:\n\n1. **실제로 하고 있는 일:**\n * \"밥 먹고 있어.\" (I'm eating.)\n * \"일하고 있어.\" (I'm working.)\n * \"공부하고 있어.\" (I'm studying.)\n * \"책 읽고 있어.\" (I'm reading a book.)\n * \"운동하고 있어.\" (I'm exercising.)\n * \"쉬고 있어.\" (I'm resting.)\n * \"드라마 보고 있어.\" (I'm watching a drama.)\n\n2. **별다른 일이 없을 때:**\n * \"별거 없어.\" (Nothing ...(truncated)

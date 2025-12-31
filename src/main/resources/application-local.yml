@@ -42,6 +42,8 @@ cors:
     - http://localhost:8081
     - http://localhost:19006
     - exp://localhost:8081
+    - http://${LOCAL_IP}:8081
+    - http://${LOCAL_IP}:19006
 
 # Swagger 설정
 springdoc:
@@ -53,3 +55,13 @@ springdoc:
     path: /v3/api-docs
   default-consumes-media-type: application/json
   default-produces-media-type: application/json
+
+
+# Gemini AI 설정
+gemini:
+  api-key: ${GEMINI_API_KEY}
+  model: gemini-2.5-flash
+
+# Chroma DB 설정
+chroma:
+  host: http://127.0.0.1:8000

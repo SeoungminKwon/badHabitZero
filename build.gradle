@@ -63,6 +63,12 @@ dependencies {
 
     // dotenv (env 읽기)
     implementation 'me.paulschwarz:spring-dotenv:4.0.0'
+
+    // Gemini API (Google AI)
+    implementation 'com.google.cloud:google-cloud-vertexai:1.1.0'
+
+    // webflux
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
 }
 
 tasks.named('test') {

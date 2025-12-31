@@ -1,0 +1,908 @@
+2025-12-28 01:55:14.454 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h41m35s551ms).
+2025-12-28 03:55:34.119 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h19s485ms).
+2025-12-28 05:48:48.127 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h53m14s393ms).
+2025-12-28 06:01:06.988 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m19s5ms).
+2025-12-28 06:05:10.907 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m3s413ms).
+2025-12-28 08:02:13.543 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h57m2s961ms).
+2025-12-28 08:54:03.920 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m50s383ms).
+2025-12-28 09:03:19.930 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m16s38ms).
+2025-12-28 09:04:40.486 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s858ms).
+2025-12-28 09:07:44.368 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m3s707ms).
+2025-12-28 10:04:29.035 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m44s844ms).
+2025-12-28 10:54:59.079 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50m29s717ms).
+2025-12-28 11:05:32.599 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m33s674ms).
+2025-12-28 13:07:45.786 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h2m13s175ms).
+2025-12-28 13:37:58.662 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m12s991ms).
+2025-12-28 14:37:13.589 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m14s997ms).
+2025-12-28 14:55:08.449 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s688ms).
+2025-12-28 15:08:14.570 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m6s121ms).
+2025-12-28 15:36:11.107 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-12-28 15:36:11.128 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Starting BadHabitZeroApplication using Java 21.0.6 with PID 16541 (/Users/ksm/develop/java/badHabitZero/build/classes/java/main started by ksm in /Users/ksm/develop/java/badHabitZero)
+2025-12-28 15:36:11.128 [restartedMain] DEBUG o.e.b.BadHabitZeroApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-28 15:36:11.128 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - The following 1 profile is active: "local"
+2025-12-28 15:36:11.145 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-28 15:36:11.145 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-28 15:36:11.499 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-28 15:36:11.523 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2025-12-28 15:36:11.780 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-28 15:36:11.785 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:36:11.786 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-28 15:36:11.786 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-28 15:36:11.802 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-28 15:36:11.802 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 656 ms
+2025-12-28 15:36:11.822 [restartedMain] DEBUG o.e.b.g.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-28 15:36:11.823 [restartedMain] DEBUG o.e.b.global.config.LoggingFilter - Filter 'loggingFilter' configured for use
+2025-12-28 15:36:11.863 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-28 15:36:11.886 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-12-28 15:36:11.898 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-28 15:36:12.010 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-28 15:36:12.027 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-28 15:36:12.143 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7802e374
+2025-12-28 15:36:12.144 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-28 15:36:12.202 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-28 15:36:12.208 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-28 15:36:12.536 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-28 15:36:12.585 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table habits 
+       modify column category enum ('CAFFEINE','DIGITAL','DRINKING','EATING','GAMBLING','LAZINESS','OTHER','SMOKING','SPENDING') not null
+2025-12-28 15:36:12.630 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column gender enum ('FEMALE','MALE','OTHER')
+2025-12-28 15:36:12.657 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column provider enum ('APPLE','GOOGLE','KAKAO') not null
+2025-12-28 15:36:12.663 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column role enum ('ADMIN','PREMIUM','USER') not null
+2025-12-28 15:36:12.675 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 15:36:12.864 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b33167fc-1292-424f-be76-b2d88cf79520
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-28 15:36:12.868 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-28 15:36:13.039 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-12-28 15:36:13.047 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:36:13.049 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-28 15:36:13.050 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 15:36:13.051 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-28 15:36:13.053 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-28 15:36:13.058 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-28 15:36:13.063 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-12-28 15:37:02.700 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-12-28 15:37:02.714 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Starting BadHabitZeroApplication using Java 21.0.6 with PID 16559 (/Users/ksm/develop/java/badHabitZero/build/classes/java/main started by ksm in /Users/ksm/develop/java/badHabitZero)
+2025-12-28 15:37:02.714 [restartedMain] DEBUG o.e.b.BadHabitZeroApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-28 15:37:02.714 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - The following 1 profile is active: "local"
+2025-12-28 15:37:02.726 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-28 15:37:02.726 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-28 15:37:03.019 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-28 15:37:03.042 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2025-12-28 15:37:03.287 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-28 15:37:03.291 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:37:03.292 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-28 15:37:03.292 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-28 15:37:03.307 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-28 15:37:03.307 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 581 ms
+2025-12-28 15:37:03.326 [restartedMain] DEBUG o.e.b.g.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-28 15:37:03.326 [restartedMain] DEBUG o.e.b.global.config.LoggingFilter - Filter 'loggingFilter' configured for use
+2025-12-28 15:37:03.363 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-28 15:37:03.381 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-12-28 15:37:03.391 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-28 15:37:03.474 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-28 15:37:03.484 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-28 15:37:03.550 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@291f24d7
+2025-12-28 15:37:03.551 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-28 15:37:03.571 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-28 15:37:03.577 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-28 15:37:03.891 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-28 15:37:03.914 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table habits 
+       modify column category enum ('CAFFEINE','DIGITAL','DRINKING','EATING','GAMBLING','LAZINESS','OTHER','SMOKING','SPENDING') not null
+2025-12-28 15:37:03.924 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column gender enum ('FEMALE','MALE','OTHER')
+2025-12-28 15:37:03.929 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column provider enum ('APPLE','GOOGLE','KAKAO') not null
+2025-12-28 15:37:03.933 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column role enum ('ADMIN','PREMIUM','USER') not null
+2025-12-28 15:37:03.941 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 15:37:04.096 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 02c35263-a09f-47ff-8ef8-bf5fd0a71a4f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-28 15:37:04.098 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-28 15:37:04.276 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-12-28 15:37:04.284 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:37:04.286 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-28 15:37:04.287 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 15:37:04.288 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-28 15:37:04.290 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-28 15:37:04.294 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-28 15:37:04.299 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-12-28 15:38:55.152 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-12-28 15:38:55.166 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Starting BadHabitZeroApplication using Java 21.0.6 with PID 16592 (/Users/ksm/develop/java/badHabitZero/build/classes/java/main started by ksm in /Users/ksm/develop/java/badHabitZero)
+2025-12-28 15:38:55.166 [restartedMain] DEBUG o.e.b.BadHabitZeroApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-28 15:38:55.167 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - The following 1 profile is active: "local"
+2025-12-28 15:38:55.178 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-28 15:38:55.178 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-28 15:38:55.458 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-28 15:38:55.476 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2025-12-28 15:38:55.726 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-28 15:38:55.730 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:38:55.730 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-28 15:38:55.731 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-28 15:38:55.745 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-28 15:38:55.745 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 567 ms
+2025-12-28 15:38:55.763 [restartedMain] DEBUG o.e.b.g.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-28 15:38:55.763 [restartedMain] DEBUG o.e.b.global.config.LoggingFilter - Filter 'loggingFilter' configured for use
+2025-12-28 15:38:55.798 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-28 15:38:55.815 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-12-28 15:38:55.825 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-28 15:38:55.904 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-28 15:38:55.913 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-28 15:38:55.969 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12757744
+2025-12-28 15:38:55.969 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-28 15:38:55.992 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-28 15:38:55.998 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-28 15:38:56.298 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-28 15:38:56.319 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table habits 
+       modify column category enum ('CAFFEINE','DIGITAL','DRINKING','EATING','GAMBLING','LAZINESS','OTHER','SMOKING','SPENDING') not null
+2025-12-28 15:38:56.331 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column gender enum ('FEMALE','MALE','OTHER')
+2025-12-28 15:38:56.339 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column provider enum ('APPLE','GOOGLE','KAKAO') not null
+2025-12-28 15:38:56.344 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column role enum ('ADMIN','PREMIUM','USER') not null
+2025-12-28 15:38:56.355 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 15:38:56.506 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4c113b98-ba27-4af4-a173-a31942884736
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-28 15:38:56.509 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-28 15:38:56.687 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-28 15:38:56.694 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:38:56.700 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-28 15:38:56.704 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Started BadHabitZeroApplication in 1.692 seconds (process running for 1.928)
+2025-12-28 15:43:31.724 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-28 15:43:31.725 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-28 15:43:31.733 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2025-12-28 15:59:30.671 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2025-12-28 15:59:30.688 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-28 15:59:30.689 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:59:30.695 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-28 15:59:30.695 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:59:30.702 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 15:59:30.705 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-28 15:59:30.712 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-28 15:59:30.769 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Starting BadHabitZeroApplication using Java 21.0.6 with PID 16592 (/Users/ksm/develop/java/badHabitZero/build/classes/java/main started by ksm in /Users/ksm/develop/java/badHabitZero)
+2025-12-28 15:59:30.769 [restartedMain] DEBUG o.e.b.BadHabitZeroApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-28 15:59:30.769 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - The following 1 profile is active: "local"
+2025-12-28 15:59:30.894 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-28 15:59:30.902 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2025-12-28 15:59:30.984 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-28 15:59:30.985 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:59:30.985 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-28 15:59:30.985 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-28 15:59:30.991 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-28 15:59:30.991 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 221 ms
+2025-12-28 15:59:30.997 [restartedMain] DEBUG o.e.b.g.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-28 15:59:30.997 [restartedMain] DEBUG o.e.b.global.config.LoggingFilter - Filter 'loggingFilter' configured for use
+2025-12-28 15:59:31.008 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-28 15:59:31.009 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-28 15:59:31.012 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-28 15:59:31.013 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-28 15:59:31.043 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@654fe655
+2025-12-28 15:59:31.043 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-28 15:59:31.043 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-28 15:59:31.044 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-28 15:59:31.084 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-28 15:59:31.117 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table habits 
+       modify column category enum ('CAFFEINE','DIGITAL','DRINKING','EATING','GAMBLING','LAZINESS','OTHER','SMOKING','SPENDING') not null
+2025-12-28 15:59:31.151 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column gender enum ('FEMALE','MALE','OTHER')
+2025-12-28 15:59:31.155 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column provider enum ('APPLE','GOOGLE','KAKAO') not null
+2025-12-28 15:59:31.159 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column role enum ('ADMIN','PREMIUM','USER') not null
+2025-12-28 15:59:31.164 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 15:59:31.221 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0696c065-7a0b-48bc-aaa7-918d9387d5d6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-28 15:59:31.221 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-28 15:59:31.281 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-28 15:59:31.286 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:59:31.286 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-28 15:59:31.288 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Started BadHabitZeroApplication in 0.537 seconds (process running for 1236.506)
+2025-12-28 15:59:31.289 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-28 15:59:34.725 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2025-12-28 15:59:34.726 [Thread-7] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-28 15:59:34.726 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:59:34.727 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-28 15:59:34.727 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:59:34.728 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 15:59:34.729 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-28 15:59:34.729 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-28 15:59:34.758 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Starting BadHabitZeroApplication using Java 21.0.6 with PID 16592 (/Users/ksm/develop/java/badHabitZero/build/classes/java/main started by ksm in /Users/ksm/develop/java/badHabitZero)
+2025-12-28 15:59:34.758 [restartedMain] DEBUG o.e.b.BadHabitZeroApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-28 15:59:34.758 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - The following 1 profile is active: "local"
+2025-12-28 15:59:34.811 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-28 15:59:34.815 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2025-12-28 15:59:34.873 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-28 15:59:34.873 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:59:34.873 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-28 15:59:34.873 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-28 15:59:34.877 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-28 15:59:34.877 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 118 ms
+2025-12-28 15:59:34.882 [restartedMain] DEBUG o.e.b.g.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-28 15:59:34.883 [restartedMain] DEBUG o.e.b.global.config.LoggingFilter - Filter 'loggingFilter' configured for use
+2025-12-28 15:59:34.891 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-28 15:59:34.892 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-28 15:59:34.894 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-28 15:59:34.895 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-12-28 15:59:34.897 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3955ce74
+2025-12-28 15:59:34.897 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-12-28 15:59:34.897 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-28 15:59:34.897 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-28 15:59:34.932 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-28 15:59:34.938 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table habits 
+       modify column category enum ('CAFFEINE','DIGITAL','DRINKING','EATING','GAMBLING','LAZINESS','OTHER','SMOKING','SPENDING') not null
+2025-12-28 15:59:34.943 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column gender enum ('FEMALE','MALE','OTHER')
+2025-12-28 15:59:34.951 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column provider enum ('APPLE','GOOGLE','KAKAO') not null
+2025-12-28 15:59:34.956 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column role enum ('ADMIN','PREMIUM','USER') not null
+2025-12-28 15:59:34.962 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 15:59:35.009 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9e7d8bed-fcd8-4ede-b20c-67afe4ac39da
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-28 15:59:35.009 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-28 15:59:35.066 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-28 15:59:35.070 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-28 15:59:35.071 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-28 15:59:35.073 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Started BadHabitZeroApplication in 0.325 seconds (process running for 1240.29)
+2025-12-28 15:59:35.073 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-28 16:09:58.325 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2025-12-28 16:09:58.327 [Thread-11] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-28 16:09:58.328 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-28 16:09:58.331 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-28 16:09:58.331 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-28 16:09:58.333 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 16:09:58.334 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-12-28 16:09:58.337 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-12-28 16:09:58.383 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Starting BadHabitZeroApplication using Java 21.0.6 with PID 16592 (/Users/ksm/develop/java/badHabitZero/build/classes/java/main started by ksm in /Users/ksm/develop/java/badHabitZero)
+2025-12-28 16:09:58.383 [restartedMain] DEBUG o.e.b.BadHabitZeroApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-28 16:09:58.383 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - The following 1 profile is active: "local"
+2025-12-28 16:09:58.477 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-28 16:09:58.483 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2025-12-28 16:09:58.547 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-28 16:09:58.548 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-28 16:09:58.548 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-28 16:09:58.548 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-28 16:09:58.553 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-28 16:09:58.553 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 169 ms
+2025-12-28 16:09:58.559 [restartedMain] DEBUG o.e.b.g.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-28 16:09:58.560 [restartedMain] DEBUG o.e.b.global.config.LoggingFilter - Filter 'loggingFilter' configured for use
+2025-12-28 16:09:58.571 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-28 16:09:58.572 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-28 16:09:58.575 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-28 16:09:58.575 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-12-28 16:09:58.579 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@998fbb1
+2025-12-28 16:09:58.579 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-12-28 16:09:58.579 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-28 16:09:58.580 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-28 16:09:58.616 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-28 16:09:58.629 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table habits 
+       modify column category enum ('CAFFEINE','DIGITAL','DRINKING','EATING','GAMBLING','LAZINESS','OTHER','SMOKING','SPENDING') not null
+2025-12-28 16:09:58.641 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column gender enum ('FEMALE','MALE','OTHER')
+2025-12-28 16:09:58.649 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column provider enum ('APPLE','GOOGLE','KAKAO') not null
+2025-12-28 16:09:58.656 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column role enum ('ADMIN','PREMIUM','USER') not null
+2025-12-28 16:09:58.664 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 16:09:58.713 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 783f29a0-0e7f-4706-b25c-58efeebac1a1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-28 16:09:58.713 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-28 16:09:58.775 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-28 16:09:58.780 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-28 16:09:58.781 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-28 16:09:58.782 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Started BadHabitZeroApplication in 0.415 seconds (process running for 1864.003)
+2025-12-28 16:09:58.783 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-28 16:20:09.969 [HikariPool-4 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=9m41s187ms).
+2025-12-28 16:20:27.765 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-28 16:20:27.772 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-28 16:20:27.777 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 16:20:27.780 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-12-28 16:20:27.784 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-12-28 16:20:29.286 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-12-28 16:20:29.315 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Starting BadHabitZeroApplication using Java 21.0.6 with PID 17833 (/Users/ksm/develop/java/badHabitZero/build/classes/java/main started by ksm in /Users/ksm/develop/java/badHabitZero)
+2025-12-28 16:20:29.316 [restartedMain] DEBUG o.e.b.BadHabitZeroApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-28 16:20:29.316 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - The following 1 profile is active: "local"
+2025-12-28 16:20:29.332 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-28 16:20:29.332 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-28 16:20:29.675 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-28 16:20:29.696 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2025-12-28 16:20:29.944 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-28 16:20:29.949 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-28 16:20:29.950 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-28 16:20:29.950 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-28 16:20:29.964 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-28 16:20:29.964 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 632 ms
+2025-12-28 16:20:29.984 [restartedMain] DEBUG o.e.b.g.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-28 16:20:29.985 [restartedMain] DEBUG o.e.b.global.config.LoggingFilter - Filter 'loggingFilter' configured for use
+2025-12-28 16:20:30.024 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-28 16:20:30.047 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-12-28 16:20:30.057 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-28 16:20:30.152 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-28 16:20:30.163 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-28 16:20:30.230 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d9cfc71
+2025-12-28 16:20:30.231 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-28 16:20:30.256 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-28 16:20:30.261 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-28 16:20:30.601 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-28 16:20:30.722 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table habits 
+       modify column category enum ('CAFFEINE','DIGITAL','DRINKING','EATING','GAMBLING','LAZINESS','OTHER','SMOKING','SPENDING') not null
+2025-12-28 16:20:30.736 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column gender enum ('FEMALE','MALE','OTHER')
+2025-12-28 16:20:30.742 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column provider enum ('APPLE','GOOGLE','KAKAO') not null
+2025-12-28 16:20:30.749 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column role enum ('ADMIN','PREMIUM','USER') not null
+2025-12-28 16:20:30.757 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-28 16:20:30.952 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: cd47900b-5a00-4c35-a660-31448df56865
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-28 16:20:30.954 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-28 16:20:31.124 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-28 16:20:31.132 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-28 16:20:31.138 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-28 16:20:31.142 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Started BadHabitZeroApplication in 2.013 seconds (process running for 2.424)
+2025-12-28 16:26:24.726 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-28 16:26:24.726 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-28 16:26:24.727 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-28 16:26:54.547 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.birth_year,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.gender,
+        u1_0.income,
+        u1_0.nickname,
+        u1_0.profile_image,
+        u1_0.provider,
+        u1_0.provider_id,
+        u1_0.role,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.provider=? 
+        and u1_0.provider_id=?
+2025-12-28 16:26:54.549 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:ENUM) <- [KAKAO]
+2025-12-28 16:26:54.549 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [4665043676]
+2025-12-28 16:26:54.559 [http-nio-8080-exec-3] INFO  o.e.b.d.user.service.AuthService - 기존 사용자 로그인: userId=1, email=jjtjdalssla10@daum.net
+2025-12-28 16:26:54.583 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.device_info,
+        rt1_0.expires_at,
+        rt1_0.token,
+        rt1_0.updated_at,
+        rt1_0.user_id 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.user_id=? 
+        and rt1_0.device_info=?
+2025-12-28 16:26:54.583 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2025-12-28 16:26:54.583 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [Expo/1017756 CFNetwork/3860.300.31 Darwin/25.2.0]
+2025-12-28 16:26:54.597 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        refresh_tokens
+        (created_at, device_info, expires_at, token, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-12-28 16:26:54.598 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP) <- [2025-12-28T16:26:54.592005]
+2025-12-28 16:26:54.598 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [Expo/1017756 CFNetwork/3860.300.31 Darwin/25.2.0]
+2025-12-28 16:26:54.598 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP) <- [2026-01-04T16:26:54.579638]
+2025-12-28 16:26:54.598 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [abad708d-43a0-4ef5-b442-b4bcbad303a6]
+2025-12-28 16:26:54.598 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIMESTAMP) <- [2025-12-28T16:26:54.592005]
+2025-12-28 16:26:54.598 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [1]
+2025-12-28 16:27:11.136 [http-nio-8080-exec-4] DEBUG o.e.b.g.s.JwtAuthenticationFilter - 인증 성공: userId=1, email=jjtjdalssla10@daum.net
+2025-12-28 16:27:11.160 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.device_info,
+        rt1_0.expires_at,
+        rt1_0.token,
+        rt1_0.updated_at,
+        rt1_0.user_id 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.token=?
+2025-12-28 16:27:11.161 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [abad708d-43a0-4ef5-b442-b4bcbad303a6]
+2025-12-28 16:27:11.165 [http-nio-8080-exec-4] INFO  o.e.b.d.user.service.AuthService - 로그아웃 처리 완료
+2025-12-28 16:27:11.166 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        refresh_tokens 
+    where
+        id=?
+2025-12-28 16:27:11.166 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2025-12-28 16:27:13.542 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.birth_year,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.gender,
+        u1_0.income,
+        u1_0.nickname,
+        u1_0.profile_image,
+        u1_0.provider,
+        u1_0.provider_id,
+        u1_0.role,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.provider=? 
+        and u1_0.provider_id=?
+2025-12-28 16:27:13.543 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:ENUM) <- [KAKAO]
+2025-12-28 16:27:13.543 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [4665043676]
+2025-12-28 16:27:13.546 [http-nio-8080-exec-6] INFO  o.e.b.d.user.service.AuthService - 기존 사용자 로그인: userId=1, email=jjtjdalssla10@daum.net
+2025-12-28 16:27:13.549 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.device_info,
+        rt1_0.expires_at,
+        rt1_0.token,
+        rt1_0.updated_at,
+        rt1_0.user_id 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.user_id=? 
+        and rt1_0.device_info=?
+2025-12-28 16:27:13.549 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2025-12-28 16:27:13.549 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [Expo/1017756 CFNetwork/3860.300.31 Darwin/25.2.0]
+2025-12-28 16:27:13.552 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        refresh_tokens
+        (created_at, device_info, expires_at, token, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-12-28 16:27:13.552 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP) <- [2025-12-28T16:27:13.551651]
+2025-12-28 16:27:13.552 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [Expo/1017756 CFNetwork/3860.300.31 Darwin/25.2.0]
+2025-12-28 16:27:13.553 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP) <- [2026-01-04T16:27:13.547332]
+2025-12-28 16:27:13.553 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [554ff5e3-e0d5-495c-b408-f4d057c7faec]
+2025-12-28 16:27:13.553 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIMESTAMP) <- [2025-12-28T16:27:13.551651]
+2025-12-28 16:27:13.553 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [1]
+2025-12-28 16:27:24.005 [http-nio-8080-exec-7] DEBUG o.e.b.g.s.JwtAuthenticationFilter - 인증 성공: userId=1, email=jjtjdalssla10@daum.net
+2025-12-28 16:27:24.011 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.device_info,
+        rt1_0.expires_at,
+        rt1_0.token,
+        rt1_0.updated_at,
+        rt1_0.user_id 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.token=?
+2025-12-28 16:27:24.012 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [554ff5e3-e0d5-495c-b408-f4d057c7faec]
+2025-12-28 16:27:24.014 [http-nio-8080-exec-7] INFO  o.e.b.d.user.service.AuthService - 로그아웃 처리 완료
+2025-12-28 16:27:24.015 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        refresh_tokens 
+    where
+        id=?
+2025-12-28 16:27:24.015 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+2025-12-28 16:27:56.205 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.birth_year,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.gender,
+        u1_0.income,
+        u1_0.nickname,
+        u1_0.profile_image,
+        u1_0.provider,
+        u1_0.provider_id,
+        u1_0.role,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.provider=? 
+        and u1_0.provider_id=?
+2025-12-28 16:27:56.206 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:ENUM) <- [KAKAO]
+2025-12-28 16:27:56.207 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [4665043676]
+2025-12-28 16:27:56.209 [http-nio-8080-exec-10] INFO  o.e.b.d.user.service.AuthService - 기존 사용자 로그인: userId=1, email=jjtjdalssla10@daum.net
+2025-12-28 16:27:56.212 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.device_info,
+        rt1_0.expires_at,
+        rt1_0.token,
+        rt1_0.updated_at,
+        rt1_0.user_id 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.user_id=? 
+        and rt1_0.device_info=?
+2025-12-28 16:27:56.213 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2025-12-28 16:27:56.213 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [Expo/1017756 CFNetwork/3860.300.31 Darwin/25.2.0]
+2025-12-28 16:27:56.215 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        refresh_tokens
+        (created_at, device_info, expires_at, token, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-12-28 16:27:56.216 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP) <- [2025-12-28T16:27:56.215005]
+2025-12-28 16:27:56.216 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [Expo/1017756 CFNetwork/3860.300.31 Darwin/25.2.0]
+2025-12-28 16:27:56.216 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP) <- [2026-01-04T16:27:56.210690]
+2025-12-28 16:27:56.216 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [5e0b694f-ed75-41d0-9d79-f4637d7515de]
+2025-12-28 16:27:56.216 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIMESTAMP) <- [2025-12-28T16:27:56.215005]
+2025-12-28 16:27:56.216 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [1]
+2025-12-28 16:28:05.328 [http-nio-8080-exec-1] DEBUG o.e.b.g.s.JwtAuthenticationFilter - 인증 성공: userId=1, email=jjtjdalssla10@daum.net
+2025-12-28 16:28:05.334 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.device_info,
+        rt1_0.expires_at,
+        rt1_0.token,
+        rt1_0.updated_at,
+        rt1_0.user_id 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.token=?
+2025-12-28 16:28:05.335 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [5e0b694f-ed75-41d0-9d79-f4637d7515de]
+2025-12-28 16:28:05.338 [http-nio-8080-exec-1] INFO  o.e.b.d.user.service.AuthService - 로그아웃 처리 완료
+2025-12-28 16:28:05.339 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        refresh_tokens 
+    where
+        id=?
+2025-12-28 16:28:05.339 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [4]
+2025-12-28 16:33:54.514 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.birth_year,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.gender,
+        u1_0.income,
+        u1_0.nickname,
+        u1_0.profile_image,
+        u1_0.provider,
+        u1_0.provider_id,
+        u1_0.role,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.provider=? 
+        and u1_0.provider_id=?
+2025-12-28 16:33:54.515 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:ENUM) <- [KAKAO]
+2025-12-28 16:33:54.516 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [4665043676]
+2025-12-28 16:33:54.529 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (birth_year, created_at, email, gender, income, nickname, profile_image, provider, provider_id, role, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-28 16:33:54.530 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:INTEGER) <- [null]
+2025-12-28 16:33:54.530 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:TIMESTAMP) <- [2025-12-28T16:33:54.523561]
+2025-12-28 16:33:54.530 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [jjtjdalssla10@daum.net]
+2025-12-28 16:33:54.530 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:ENUM) <- [null]
+2025-12-28 16:33:54.530 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:INTEGER) <- [null]
+2025-12-28 16:33:54.530 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:VARCHAR) <- [권성민]
+2025-12-28 16:33:54.530 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [http://img1.kakaocdn.net/thumb/R640x640.q70/?fname=http://t1.kakaocdn.net/account_images/default_profile.jpeg]
+2025-12-28 16:33:54.530 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:ENUM) <- [KAKAO]
+2025-12-28 16:33:54.530 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [4665043676]
+2025-12-28 16:33:54.530 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (10:ENUM) <- [USER]
+2025-12-28 16:33:54.531 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (11:TIMESTAMP) <- [2025-12-28T16:33:54.523561]
+2025-12-28 16:33:54.534 [http-nio-8080-exec-4] INFO  o.e.b.d.user.service.AuthService - 신규 사용자 가입: userId=2, email=jjtjdalssla10@daum.net
+2025-12-28 16:33:54.537 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.device_info,
+        rt1_0.expires_at,
+        rt1_0.token,
+        rt1_0.updated_at,
+        rt1_0.user_id 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.user_id=? 
+        and rt1_0.device_info=?
+2025-12-28 16:33:54.538 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2025-12-28 16:33:54.538 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [Expo/1017756 CFNetwork/3860.300.31 Darwin/25.2.0]
+2025-12-28 16:33:54.540 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        refresh_tokens
+        (created_at, device_info, expires_at, token, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-12-28 16:33:54.540 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP) <- [2025-12-28T16:33:54.539912]
+2025-12-28 16:33:54.540 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [Expo/1017756 CFNetwork/3860.300.31 Darwin/25.2.0]
+2025-12-28 16:33:54.540 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP) <- [2026-01-04T16:33:54.535426]
+2025-12-28 16:33:54.541 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [e82734e4-c242-4b7d-ba22-d9d387366427]
+2025-12-28 16:33:54.541 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIMESTAMP) <- [2025-12-28T16:33:54.539912]
+2025-12-28 16:33:54.541 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [2]
+2025-12-28 16:34:42.614 [http-nio-8080-exec-6] DEBUG o.e.b.g.s.JwtAuthenticationFilter - 인증 성공: userId=2, email=jjtjdalssla10@daum.net
+2025-12-28 16:34:42.625 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.device_info,
+        rt1_0.expires_at,
+        rt1_0.token,
+        rt1_0.updated_at,
+        rt1_0.user_id 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.token=?
+2025-12-28 16:34:42.626 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [e82734e4-c242-4b7d-ba22-d9d387366427]
+2025-12-28 16:34:42.628 [http-nio-8080-exec-6] INFO  o.e.b.d.user.service.AuthService - 로그아웃 처리 완료
+2025-12-28 16:34:44.288 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.birth_year,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.gender,
+        u1_0.income,
+        u1_0.nickname,
+        u1_0.profile_image,
+        u1_0.provider,
+        u1_0.provider_id,
+        u1_0.role,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.provider=? 
+        and u1_0.provider_id=?
+2025-12-28 16:34:44.288 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:ENUM) <- [KAKAO]
+2025-12-28 16:34:44.289 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [4665043676]
+2025-12-28 16:34:44.292 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (birth_year, created_at, email, gender, income, nickname, profile_image, provider, provider_id, role, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-28 16:34:44.293 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:INTEGER) <- [null]
+2025-12-28 16:34:44.293 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:TIMESTAMP) <- [2025-12-28T16:34:44.291889]
+2025-12-28 16:34:44.293 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [jjtjdalssla10@daum.net]
+2025-12-28 16:34:44.293 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:ENUM) <- [null]
+2025-12-28 16:34:44.293 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:INTEGER) <- [null]
+2025-12-28 16:34:44.293 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:VARCHAR) <- [권성민]
+2025-12-28 16:34:44.294 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [http://img1.kakaocdn.net/thumb/R640x640.q70/?fname=http://t1.kakaocdn.net/account_images/default_profile.jpeg]
+2025-12-28 16:34:44.294 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:ENUM) <- [KAKAO]
+2025-12-28 16:34:44.294 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [4665043676]
+2025-12-28 16:34:44.294 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (10:ENUM) <- [USER]
+2025-12-28 16:34:44.294 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (11:TIMESTAMP) <- [2025-12-28T16:34:44.291889]
+2025-12-28 16:34:44.296 [http-nio-8080-exec-8] INFO  o.e.b.d.user.service.AuthService - 신규 사용자 가입: userId=3, email=jjtjdalssla10@daum.net
+2025-12-28 16:34:44.299 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.device_info,
+        rt1_0.expires_at,
+        rt1_0.token,
+        rt1_0.updated_at,
+        rt1_0.user_id 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.user_id=? 
+        and rt1_0.device_info=?
+2025-12-28 16:34:44.300 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+2025-12-28 16:34:44.300 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [Expo/1017756 CFNetwork/3860.300.31 Darwin/25.2.0]
+2025-12-28 16:34:44.302 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        refresh_tokens
+        (created_at, device_info, expires_at, token, updated_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-12-28 16:34:44.303 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP) <- [2025-12-28T16:34:44.302151]
+2025-12-28 16:34:44.303 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [Expo/1017756 CFNetwork/3860.300.31 Darwin/25.2.0]
+2025-12-28 16:34:44.303 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP) <- [2026-01-04T16:34:44.297551]
+2025-12-28 16:34:44.303 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [e8c43182-758e-4eaa-80db-dcf54c4844b9]
+2025-12-28 16:34:44.303 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIMESTAMP) <- [2025-12-28T16:34:44.302151]
+2025-12-28 16:34:44.303 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [3]
+2025-12-28 16:37:08.468 [http-nio-8080-exec-10] DEBUG o.e.b.g.s.JwtAuthenticationFilter - 인증 성공: userId=3, email=jjtjdalssla10@daum.net
+2025-12-28 16:37:08.476 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.device_info,
+        rt1_0.expires_at,
+        rt1_0.token,
+        rt1_0.updated_at,
+        rt1_0.user_id 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.token=?
+2025-12-28 16:37:08.477 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [e8c43182-758e-4eaa-80db-dcf54c4844b9]
+2025-12-28 16:37:08.479 [http-nio-8080-exec-10] INFO  o.e.b.d.user.service.AuthService - 로그아웃 처리 완료
+2025-12-28 16:37:08.480 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        refresh_tokens 
+    where
+        id=?
+2025-12-28 16:37:08.480 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [6]
+2025-12-28 16:47:55.686 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m25s26ms).
+2025-12-28 16:53:52.526 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m56s694ms).
+2025-12-28 17:12:47.117 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m54s524ms).
+2025-12-28 18:10:37.326 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m49s516ms).
+2025-12-28 18:27:56.111 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m48s704ms).
+2025-12-28 18:40:43.249 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m47s67ms).
+2025-12-28 18:58:12.025 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m28s703ms).
+2025-12-28 19:14:06.548 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m24s440ms).
+2025-12-28 19:33:00.084 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m53s461ms).
+2025-12-28 19:42:06.219 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m36s51ms).
+2025-12-28 20:01:07.996 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m1s714ms).
+2025-12-28 20:19:16.807 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m8s742ms).
+2025-12-28 20:24:52.595 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m35s695ms).
+2025-12-28 20:42:45.588 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m52s917ms).
+2025-12-28 20:59:28.865 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m43s206ms).
+2025-12-28 21:17:11.663 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m12s745ms).
+2025-12-28 21:22:52.316 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m34s388ms).
+2025-12-28 21:41:26.277 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m3s887ms).
+2025-12-28 21:43:58.125 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m31s769ms).
+2025-12-28 22:01:48.869 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m50s670ms).
+2025-12-28 22:20:11.713 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m22s778ms).
+2025-12-28 22:36:54.171 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m42s378ms).
+2025-12-28 22:45:02.987 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m38s741ms).
+2025-12-28 23:02:04.783 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m1s724ms).
+2025-12-28 23:20:14.967 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m10s115ms).
+2025-12-28 23:38:20.776 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m35s719ms).
+2025-12-28 23:54:49.238 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s394ms).
