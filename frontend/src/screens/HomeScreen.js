@@ -1,202 +1,277 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import {
   View,
   Text,
   StyleSheet,
-  SafeAreaView,
   TouchableOpacity,
+  FlatList,
+  ActivityIndicator,
   Alert,
 } from 'react-native';
-import { colors } from '../constants/colors';
+import { useFocusEffect } from '@react-navigation/native';
+import { getHabits, deleteHabit } from '../api/habitApi';
+import { getCategoryByKey } from '../constants/categories';
 import { storage } from '../utils/storage';
-import { authApi } from '../api/authApi';
 
 export default function HomeScreen({ navigation }) {
-  // ========== State ==========
-  const [user, setUser] = useState(null);  // 사용자 정보
+  const [user, setUser] = useState(null);
+  const [habits, setHabits] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  // ========== useEffect ==========
-  // 컴포넌트가 처음 렌더링될 때 실행
-  // 웹 React의 componentDidMount와 비슷
-  useEffect(() => {
-    loadUser();
-  }, []);  // [] 빈 배열: 처음 한 번만 실행
+  // 화면에 포커스될 때마다 데이터 새로고침
+  useFocusEffect(
+    useCallback(() => {
+      loadData();
+    }, [])
+  );
 
-  // 저장된 사용자 정보 불러오기
-  const loadUser = async () => {
-    const userData = await storage.getUser();
-    console.log('불러온 사용자 정보:', userData);
-    setUser(userData);
+  const loadData = async () => {
+    try {
+      setLoading(true);
+      const userData = await storage.getUser();
+      setUser(userData);
+
+      const response = await getHabits();
+      if (response.success) {
+        setHabits(response.data);
+      }
+    } catch (error) {
+      console.log('데이터 로딩 실패:', error);
+    } finally {
+      setLoading(false);
+    }
   };
 
-  // ========== 로그아웃 ==========
-  const handleLogout = () => {
-    // 확인 창 띄우기
+  const handleDeleteHabit = (habitId, habitName) => {
     Alert.alert(
-      '로그아웃',           // 제목
-      '정말 로그아웃 하시겠습니까?',  // 메시지
+      '악습 삭제',
+      `"${habitName}"을(를) 삭제하시겠습니까?`,
       [
-        // 버튼들
+        { text: '취소', style: 'cancel' },
         {
-          text: '취소',
-          style: 'cancel',  // iOS에서 회색 버튼
-        },
-        {
-          text: '로그아웃',
-          style: 'destructive',  // iOS에서 빨간 버튼
+          text: '삭제',
+          style: 'destructive',
           onPress: async () => {
-            await authApi.logout();
-            navigation.replace('Login');  // 로그인 화면으로 이동
+            try {
+              await deleteHabit(habitId);
+              loadData(); // 새로고침
+            } catch (error) {
+              Alert.alert('오류', '삭제에 실패했습니다.');
+            }
           },
         },
       ]
     );
   };
 
-  // ========== 악습 추가 버튼 ==========
-  const handleAddHabit = () => {
-    // 아직 구현 안 함 - 나중에 추가
-    Alert.alert('준비 중', '악습 추가 기능은 곧 추가될 예정이에요!');
+  const renderHabitItem = ({ item }) => {
+    const category = getCategoryByKey(item.category);
+    
+    return (
+      <TouchableOpacity
+        style={styles.habitCard}
+        onPress={() => navigation.navigate('HabitDetail', { habitId: item.id })}
+        onLongPress={() => handleDeleteHabit(item.id, item.name)}
+      >
+        <View style={styles.habitLeft}>
+          <Text style={styles.habitIcon}>{category.icon}</Text>
+          <View>
+            <Text style={styles.habitName}>{item.name}</Text>
+            <Text style={styles.habitCategory}>{category.label}</Text>
+          </View>
+        </View>
+        <View style={styles.habitRight}>
+          <Text style={styles.habitValue}>
+            {item.effectiveValue?.toLocaleString()}원
+          </Text>
+          <Text style={styles.habitValueLabel}>1회당</Text>
+        </View>
+      </TouchableOpacity>
+    );
   };
 
-  // ========== 금고 버튼 ==========
-  const handleVaultPress = () => {
-    // 아직 구현 안 함 - 나중에 추가
-    Alert.alert('금고', '총 절약 금액: ₩0');
-  };
+  const renderEmptyList = () => (
+    <View style={styles.emptyContainer}>
+      <Text style={styles.emptyIcon}>🎯</Text>
+      <Text style={styles.emptyTitle}>등록된 악습이 없어요</Text>
+      <Text style={styles.emptySubtitle}>
+        고치고 싶은 습관을 등록하고{'\n'}얼마나 절약할 수 있는지 확인해보세요!
+      </Text>
+    </View>
+  );
 
-  // ========== 화면 렌더링 ==========
-  return (
-    <SafeAreaView style={styles.container}>
-
-      {/* ===== 상단 헤더 ===== */}
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>홈</Text>
-        <TouchableOpacity onPress={handleLogout}>
-          <Text style={styles.logoutText}>로그아웃</Text>
-        </TouchableOpacity>
+  if (loading) {
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color="#4A90A4" />
       </View>
+    );
+  }
 
-      {/* ===== 메인 컨텐츠 ===== */}
-      <View style={styles.content}>
-
-        {/* 환영 메시지 */}
-        <Text style={styles.welcomeText}>
+  return (
+    <View style={styles.container}>
+      {/* 헤더 */}
+      <View style={styles.header}>
+        <Text style={styles.greeting}>
           안녕하세요, {user?.nickname || '사용자'}님! 👋
         </Text>
-
-        {/* 안내 메시지 */}
-        <Text style={styles.descriptionText}>
-          아직 등록된 악습이 없습니다.{'\n'}
-          악습을 등록하고 절약을 시작해보세요!
+        <Text style={styles.subtitle}>
+          오늘도 좋은 습관을 만들어볼까요?
         </Text>
-
-        {/* 악습 추가 버튼 */}
-        <TouchableOpacity
-          style={styles.addButton}
-          onPress={handleAddHabit}
-        >
-          <Text style={styles.addButtonText}>+ 악습 추가하기</Text>
-        </TouchableOpacity>
-
       </View>
 
-      {/* ===== 금고 버튼 (플로팅) ===== */}
-      <TouchableOpacity
-        style={styles.vaultButton}
-        onPress={handleVaultPress}
-      >
-        <Text style={styles.vaultButtonText}>💰 금고: ₩0</Text>
-      </TouchableOpacity>
+      {/* 악습 목록 */}
+      <View style={styles.listContainer}>
+        <View style={styles.listHeader}>
+          <Text style={styles.listTitle}>내 악습 목록</Text>
+          <Text style={styles.listCount}>{habits.length}개</Text>
+        </View>
 
-    </SafeAreaView>
+        <FlatList
+          data={habits}
+          renderItem={renderHabitItem}
+          keyExtractor={(item) => item.id.toString()}
+          ListEmptyComponent={renderEmptyList}
+          contentContainerStyle={habits.length === 0 && styles.emptyList}
+        />
+      </View>
+
+      {/* 악습 추가 버튼 */}
+      <TouchableOpacity
+        style={styles.addButton}
+        onPress={() => navigation.navigate('AddHabit')}
+      >
+        <Text style={styles.addButtonText}>+ 악습 추가하기</Text>
+      </TouchableOpacity>
+    </View>
   );
 }
 
-// ========== 스타일 ==========
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: '#F5F5F5',
   },
-
-  // 헤더
-  header: {
-    flexDirection: 'row',  // 가로 방향 배치
-    justifyContent: 'space-between',  // 양 끝으로 배치
-    alignItems: 'center',
-    paddingHorizontal: 20,
-    paddingVertical: 16,
-    backgroundColor: colors.white,
-    // 그림자 (iOS)
-    shadowColor: colors.black,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    // 그림자 (Android)
-    elevation: 3,
-  },
-  headerTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: colors.black,
-  },
-  logoutText: {
-    fontSize: 14,
-    color: colors.gray,
-  },
-
-  // 메인 컨텐츠
-  content: {
+  loadingContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 24,
+    backgroundColor: '#F5F5F5',
   },
-  welcomeText: {
-    fontSize: 22,
-    fontWeight: '600',
-    color: colors.black,
+  header: {
+    backgroundColor: '#4A90A4',
+    paddingTop: 60,
+    paddingBottom: 24,
+    paddingHorizontal: 20,
+  },
+  greeting: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#E0E0E0',
+    marginTop: 4,
+  },
+  listContainer: {
+    flex: 1,
+    paddingHorizontal: 20,
+    paddingTop: 20,
+  },
+  listHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     marginBottom: 12,
   },
-  descriptionText: {
+  listTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+  listCount: {
     fontSize: 14,
-    color: colors.gray,
-    textAlign: 'center',
-    lineHeight: 22,
-    marginBottom: 32,
+    color: '#888',
   },
-  addButton: {
-    backgroundColor: colors.primary,
-    paddingHorizontal: 24,
-    paddingVertical: 14,
+  habitCard: {
+    backgroundColor: '#FFFFFF',
     borderRadius: 12,
+    padding: 16,
+    marginBottom: 12,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
   },
-  addButtonText: {
+  habitLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  habitIcon: {
+    fontSize: 32,
+    marginRight: 12,
+  },
+  habitName: {
     fontSize: 16,
     fontWeight: '600',
-    color: colors.white,
+    color: '#333',
   },
-
-  // 금고 버튼 (플로팅)
-  vaultButton: {
-    position: 'absolute',  // 절대 위치 / 다른 요소와 관계없이 위치 지정
-    bottom: 40,
-    right: 20,
-    backgroundColor: colors.primary,
-    paddingHorizontal: 20,
-    paddingVertical: 12,
-    borderRadius: 24,
-    // 그림자
-    shadowColor: colors.black,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 6,
-    elevation: 5,
+  habitCategory: {
+    fontSize: 12,
+    color: '#888',
+    marginTop: 2,
   },
-  vaultButtonText: {
+  habitRight: {
+    alignItems: 'flex-end',
+  },
+  habitValue: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#4A90A4',
+  },
+  habitValueLabel: {
+    fontSize: 12,
+    color: '#888',
+  },
+  emptyContainer: {
+    alignItems: 'center',
+    paddingVertical: 40,
+  },
+  emptyIcon: {
+    fontSize: 48,
+    marginBottom: 16,
+  },
+  emptyTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 8,
+  },
+  emptySubtitle: {
     fontSize: 14,
-    fontWeight: '600',
-    color: colors.white,
+    color: '#888',
+    textAlign: 'center',
+    lineHeight: 20,
+  },
+  emptyList: {
+    flexGrow: 1,
+  },
+  addButton: {
+    backgroundColor: '#4A90A4',
+    marginHorizontal: 20,
+    marginBottom: 30,
+    paddingVertical: 16,
+    borderRadius: 12,
+    alignItems: 'center',
+  },
+  addButtonText: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });

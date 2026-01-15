@@ -2,16 +2,22 @@ package org.example.badhabitzero.domain.ai.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.netty.handler.timeout.ReadTimeoutHandler;
+import io.netty.handler.timeout.WriteTimeoutHandler;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.badhabitzero.domain.ai.config.ChromaProperties;
 import org.example.badhabitzero.domain.ai.config.GeminiProperties;
 import org.springframework.http.MediaType;
+import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+import reactor.netty.http.client.HttpClient;
 
+import java.time.Duration;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @Service
@@ -22,23 +28,33 @@ public class ChromaService {
     private final GeminiService geminiService;        // 임베딩 생성용
     private final ObjectMapper objectMapper;          // JSON 파싱용
     private final GeminiProperties geminiProperties;
+    private final WebClient chromaWebClient;          // WebConfig에서 주입
 
-    // HTTP 클라이언트 (Chroma 서버와 통신)
-    private WebClient webClient;
+    // HTTP 클라이언트 (Gemini Embedding API용)
+    private WebClient geminiEmbeddingWebClient;
 
     // 컬렉션 이름 (테이블 이름 같은 것)
     private static final String COLLECTION_NAME = "habit_facts";
 
     /**
-     * 서비스 시작 시 WebClient 초기화
+     * 서비스 시작 시 Gemini Embedding WebClient 초기화
      * @PostConstruct: 빈 생성 후 자동 실행
      */
     @PostConstruct
     public void init() {
-        this.webClient = WebClient.builder()
-                .baseUrl(chromaProperties.getHost())  // http://localhost:8000(로컬)
-                .build();
         log.info("ChromaService 초기화 완료. 서버: {}", chromaProperties.getHost());
+
+        // Gemini Embedding API용 별도 WebClient 설정
+        HttpClient httpClient = HttpClient.create()
+                .responseTimeout(Duration.ofSeconds(10))
+                .doOnConnected(conn ->
+                        conn.addHandlerLast(new ReadTimeoutHandler(10, TimeUnit.SECONDS))
+                                .addHandlerLast(new WriteTimeoutHandler(5, TimeUnit.SECONDS))
+                );
+
+        this.geminiEmbeddingWebClient = WebClient.builder()
+                .clientConnector(new ReactorClientHttpConnector(httpClient))
+                .build();
     }
 
     /**
@@ -57,13 +73,13 @@ public class ChromaService {
 
             // POST 요청으로 컬렉션 생성
             // URL: http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections(로컬)
-            webClient.post()
+            chromaWebClient.post()
                     .uri("/api/v2/tenants/default_tenant/databases/default_database/collections")
                     .contentType(MediaType.APPLICATION_JSON)
                     .bodyValue(body)
                     .retrieve()
                     .bodyToMono(String.class)
-                    .block();  // 동기 방식으로 대기
+                    .block(Duration.ofSeconds(10));  // 명시적 타임아웃
 
             log.info("컬렉션 생성 완료: {}", COLLECTION_NAME);
 
@@ -82,11 +98,11 @@ public class ChromaService {
         try {
             // GET 요청으로 컬렉션 정보 조회
             // URL: http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/habit_facts
-            String response = webClient.get()
+            String response = chromaWebClient.get()
                     .uri("/api/v2/tenants/default_tenant/databases/default_database/collections/{name}", COLLECTION_NAME)
                     .retrieve()
                     .bodyToMono(String.class)
-                    .block();
+                    .block(Duration.ofSeconds(10));
 
             // JSON 응답에서 id 추출
             // 응답 예시: {"id": "abc-123", "name": "habit_facts", ...}
@@ -126,14 +142,13 @@ public class ChromaService {
 
         try {
             // Gemini API 호출
-            String response = WebClient.create()
-                    .post()
+            String response = geminiEmbeddingWebClient.post()
                     .uri(url)
                     .contentType(MediaType.APPLICATION_JSON)
                     .bodyValue(body)
                     .retrieve()
                     .bodyToMono(String.class)
-                    .block();
+                    .block(Duration.ofSeconds(10));
 
             // 응답에서 임베딩 값 추출
             // 응답 예시:
@@ -195,13 +210,13 @@ public class ChromaService {
         try {
             // 4. Chroma에 문서 추가
             // URL: http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/{collectionId}/add
-            webClient.post()
+            chromaWebClient.post()
                     .uri("/api/v2/tenants/default_tenant/databases/default_database/collections/{collectionId}/add", collectionId)
                     .contentType(MediaType.APPLICATION_JSON)
                     .bodyValue(body)
                     .retrieve()
                     .bodyToMono(String.class)
-                    .block();
+                    .block(Duration.ofSeconds(10));
 
             log.info("문서 추가 완료: {} - {}", id, content.substring(0, Math.min(30, content.length())));
 
@@ -239,13 +254,13 @@ public class ChromaService {
         try {
             // 4. Chroma에 검색 요청
             // URL: http://localhost:8000/api/v2/tenants/default_tenant/databases/default_database/collections/{collectionId}/query
-            String response = webClient.post()
+            String response = chromaWebClient.post()
                     .uri("/api/v2/tenants/default_tenant/databases/default_database/collections/{collectionId}/query", collectionId)
                     .contentType(MediaType.APPLICATION_JSON)
                     .bodyValue(body)
                     .retrieve()
                     .bodyToMono(String.class)
-                    .block();
+                    .block(Duration.ofSeconds(10));
 
             // 5. 검색 결과 파싱
             return parseSearchResults(response);
@@ -280,13 +295,13 @@ public class ChromaService {
         );
 
         try {
-            String response = webClient.post()
+            String response = chromaWebClient.post()
                     .uri("/api/v2/tenants/default_tenant/databases/default_database/collections/{collectionId}/query", collectionId)
                     .contentType(MediaType.APPLICATION_JSON)
                     .bodyValue(body)
                     .retrieve()
                     .bodyToMono(String.class)
-                    .block();
+                    .block(Duration.ofSeconds(10));
 
             return parseSearchResults(response);
 

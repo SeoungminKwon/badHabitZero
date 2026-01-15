@@ -19,6 +19,7 @@ public class GeminiService {
 
     private final GeminiProperties geminiProperties;
     private final ObjectMapper objectMapper;
+    private final WebClient geminiWebClient;
 
     private static final String GEMINI_API_URL =
             "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s";
@@ -31,8 +32,6 @@ public class GeminiService {
                 geminiProperties.getModel(),
                 geminiProperties.getApiKey());
 
-        WebClient webClient = WebClient.create();
-
         // 요청 본문 구성
         Map<String, Object> requestBody = Map.of(
                 "contents", List.of(
@@ -42,18 +41,18 @@ public class GeminiService {
                 ),
                 "generationConfig", Map.of(
                         "temperature", 0.7,
-                        "maxOutputTokens", 2048
+                        "maxOutputTokens", 1024
                 )
         );
 
         try {
-            String response = webClient.post()
+            String response = geminiWebClient.post()
                     .uri(url)
                     .contentType(MediaType.APPLICATION_JSON)
                     .bodyValue(requestBody)
                     .retrieve()
                     .bodyToMono(String.class)
-                    .block();
+                    .block(java.time.Duration.ofSeconds(15));
 
             // 응답에서 텍스트 추출
             return extractTextFromResponse(response);

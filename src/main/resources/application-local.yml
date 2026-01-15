@@ -5,7 +5,7 @@ spring:
 
   # MySQL 데이터베이스
   datasource:
-    url: jdbc:mysql://localhost:3306/badhabitzero?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/badhabitzero?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root1234

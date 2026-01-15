@@ -57,4 +57,12 @@ public class AuthController {
         authService.logout(request.getRefreshToken());
         return ResponseEntity.ok(ApiResponse.success(null, "로그아웃 성공"));
     }
+
+    @Operation(summary = "토큰 검증", description = "액세스 토큰의 유효성을 검증합니다.")
+    @GetMapping("/verify")
+    public ResponseEntity<ApiResponse<Boolean>> verifyToken() {
+        // JwtAuthenticationFilter에서 이미 토큰 검증을 완료했으므로
+        // 이 엔드포인트에 도달했다는 것은 토큰이 유효하다는 의미
+        return ResponseEntity.ok(ApiResponse.success(true, "토큰이 유효합니다"));
+    }
 }

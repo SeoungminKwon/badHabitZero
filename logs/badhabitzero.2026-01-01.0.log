@@ -1,0 +1,235 @@
+2026-01-01 00:18:53.588 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m38s879ms).
+2026-01-01 00:36:04.383 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m10s698ms).
+2026-01-01 00:40:39.826 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m5s361ms).
+2026-01-01 00:57:41.616 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m1s717ms).
+2026-01-01 01:14:10.755 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m29s59ms).
+2026-01-01 01:33:07.969 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m27s113ms).
+2026-01-01 01:51:02.133 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m54s96ms).
+2026-01-01 02:08:29.398 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m57s167ms).
+2026-01-01 02:13:41.139 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m41s651ms).
+2026-01-01 02:31:14.529 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m33s313ms).
+2026-01-01 02:48:52.556 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m37s951ms).
+2026-01-01 03:06:07.311 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m44s681ms).
+2026-01-01 03:22:54.431 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m47s50ms).
+2026-01-01 03:39:29.177 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m34s671ms).
+2026-01-01 03:57:18.767 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m49s496ms).
+2026-01-01 04:15:27.468 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m8s629ms).
+2026-01-01 04:33:15.169 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m17s677ms).
+2026-01-01 04:49:45.948 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m30s702ms).
+2026-01-01 05:07:56.771 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m10s750ms).
+2026-01-01 05:24:24.569 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m27s705ms).
+2026-01-01 05:41:20.386 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m55s745ms).
+2026-01-01 05:59:25.626 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m35s155ms).
+2026-01-01 06:16:26.375 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m664ms).
+2026-01-01 06:34:40.157 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m13s710ms).
+2026-01-01 06:51:04.851 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=14m54s650ms).
+2026-01-01 07:08:40.625 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m35s699ms).
+2026-01-01 07:25:24.404 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m43s700ms).
+2026-01-01 07:42:10.161 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m45s669ms).
+2026-01-01 08:00:44.169 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m3s956ms).
+2026-01-01 08:18:12.448 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m28s210ms).
+2026-01-01 08:36:29.218 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m16s686ms).
+2026-01-01 08:51:48.294 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=13m48s985ms).
+2026-01-01 09:08:53.050 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m4s685ms).
+2026-01-01 09:27:37.785 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m44s662ms).
+2026-01-01 09:44:46.511 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m38s667ms).
+2026-01-01 09:52:57.264 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=7m10s679ms).
+2026-01-01 10:09:37.045 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m39s704ms).
+2026-01-01 10:26:22.774 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m45s655ms).
+2026-01-01 10:44:30.133 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m37s275ms).
+2026-01-01 10:53:39.909 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=8m9s688ms).
+2026-01-01 11:12:27.721 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m17s732ms).
+2026-01-01 11:29:09.455 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m41s658ms).
+2026-01-01 11:46:52.652 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m43s134ms).
+2026-01-01 11:55:02.095 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=6m39s359ms).
+2026-01-01 12:07:37.092 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=11m34s923ms).
+2026-01-01 12:26:02.667 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m25s507ms).
+2026-01-01 12:44:27.823 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m25s58ms).
+2026-01-01 12:49:13.961 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m45s924ms).
+2026-01-01 12:55:44.448 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m30s418ms).
+2026-01-01 13:12:19.181 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m34s658ms).
+2026-01-01 13:30:20.930 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m31s686ms).
+2026-01-01 13:45:18.758 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=13m57s745ms).
+2026-01-01 13:56:38.155 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=10m19s329ms).
+2026-01-01 14:09:04.834 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=10m56s597ms).
+2026-01-01 14:26:51.808 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m46s908ms).
+2026-01-01 14:45:27.165 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m35s267ms).
+2026-01-01 14:57:49.498 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=11m22s248ms).
+2026-01-01 15:06:27.365 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=7m37s794ms).
+2026-01-01 15:23:55.923 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m28s490ms).
+2026-01-01 15:42:37.685 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m11s688ms).
+2026-01-01 15:58:53.476 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m15s725ms).
+2026-01-01 16:02:12.180 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2m18s639ms).
+2026-01-01 16:18:57.617 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m45s368ms).
+2026-01-01 16:36:04.378 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m6s687ms).
+2026-01-01 16:54:54.161 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m19s709ms).
+2026-01-01 16:59:57.895 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=4m3s655ms).
+2026-01-01 17:18:38.603 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=17m40s640ms).
+2026-01-01 17:21:54.802 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2m16s123ms).
+2026-01-01 17:38:51.126 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m56s254ms).
+2026-01-01 17:56:10.250 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m49s53ms).
+2026-01-01 18:00:45.984 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m35s660ms).
+2026-01-01 18:17:56.832 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m10s775ms).
+2026-01-01 18:36:25.539 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m58s636ms).
+2026-01-01 18:39:22.839 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m57s242ms).
+2026-01-01 18:41:58.704 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m35s440ms).
+2026-01-01 20:10:27.115 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-01 20:10:27.119 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-01 20:10:27.133 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-01 20:10:27.139 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-01-01 20:10:27.143 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-01-01 20:10:32.633 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-01-01 20:10:32.650 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Starting BadHabitZeroApplication using Java 21.0.6 with PID 28503 (/Users/ksm/develop/java/badHabitZero/build/classes/java/main started by ksm in /Users/ksm/develop/java/badHabitZero)
+2026-01-01 20:10:32.650 [restartedMain] DEBUG o.e.b.BadHabitZeroApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-01-01 20:10:32.650 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - The following 1 profile is active: "local"
+2026-01-01 20:10:32.665 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-01 20:10:32.665 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-01 20:10:32.999 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-01 20:10:33.056 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2026-01-01 20:10:33.307 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-01 20:10:33.312 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-01 20:10:33.312 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-01 20:10:33.312 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-01-01 20:10:33.330 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-01 20:10:33.330 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 665 ms
+2026-01-01 20:10:33.349 [restartedMain] DEBUG o.e.b.g.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-01-01 20:10:33.349 [restartedMain] DEBUG o.e.b.global.config.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-01-01 20:10:33.391 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-01 20:10:33.413 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-01-01 20:10:33.425 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-01 20:10:33.523 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-01 20:10:33.534 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-01 20:10:33.600 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20bc11a1
+2026-01-01 20:10:33.601 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-01 20:10:33.657 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-01 20:10:33.662 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-01 20:10:33.982 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-01 20:10:34.059 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table habits 
+       modify column category enum ('CAFFEINE','DIGITAL','DRINKING','EATING','GAMBLING','LAZINESS','OTHER','SMOKING','SPENDING') not null
+2026-01-01 20:10:34.116 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column gender enum ('FEMALE','MALE','OTHER')
+2026-01-01 20:10:34.130 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column provider enum ('APPLE','GOOGLE','KAKAO') not null
+2026-01-01 20:10:34.140 [restartedMain] DEBUG org.hibernate.SQL - 
+    alter table users 
+       modify column role enum ('ADMIN','PREMIUM','USER') not null
+2026-01-01 20:10:34.146 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-01 20:10:34.266 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - ChromaService 초기화 완료. 서버: http://127.0.0.1:8000
+2026-01-01 20:10:34.425 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a09a3121-4428-4990-9033-8f1a980743cb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-01 20:10:34.428 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-01 20:10:34.612 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-01-01 20:10:34.622 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-01 20:10:34.631 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-01 20:10:34.634 [restartedMain] INFO  o.e.b.BadHabitZeroApplication - Started BadHabitZeroApplication in 2.151 seconds (process running for 2.481)
+2026-01-01 20:10:34.635 [restartedMain] INFO  o.e.b.d.a.s.HabitDataInitializer - ========== 악습 데이터 초기화 시작 ==========
+2026-01-01 20:10:34.688 [restartedMain] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-01-01 20:10:34.828 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 컬렉션이 이미 존재하거나 생성 실패: 409 Conflict from POST http://127.0.0.1:8000/api/v2/tenants/default_tenant/databases/default_database/collections
+2026-01-01 20:10:34.828 [restartedMain] INFO  o.e.b.d.a.s.HabitDataInitializer - SMOKING 데이터 추가 중...
+2026-01-01 20:10:35.384 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:35.436 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: smoking_001 - 담배 1갑 평균 가격은 4,500원이다
+2026-01-01 20:10:35.781 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:35.823 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: smoking_002 - 담배 1개비당 수명이 약 11분 단축된다
+2026-01-01 20:10:36.188 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:36.229 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: smoking_003 - 흡연자는 비흡연자보다 연간 의료비가 약 50만원 더 높
+2026-01-01 20:10:36.483 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:36.525 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: smoking_004 - 흡연은 폐암 발생률을 15배 높인다
+2026-01-01 20:10:36.778 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:36.820 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: smoking_005 - 금연 시 연간 약 150만원을 절약할 수 있다
+2026-01-01 20:10:36.820 [restartedMain] INFO  o.e.b.d.a.s.HabitDataInitializer - DRINKING 데이터 추가 중...
+2026-01-01 20:10:37.072 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:37.114 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: drinking_001 - 소주 1병 평균 가격은 5,000원이다
+2026-01-01 20:10:37.363 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:37.404 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: drinking_002 - 음주 후 숙취로 인한 생산성 손실은 1회당 약 3만원이
+2026-01-01 20:10:37.650 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:37.689 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: drinking_003 - 과음자는 연간 의료비가 약 40만원 더 높다
+2026-01-01 20:10:37.949 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:37.990 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: drinking_004 - 알코올 의존 치료비용은 연간 약 200만원이다
+2026-01-01 20:10:38.243 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:38.283 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: drinking_005 - 음주운전 적발 시 벌금은 최소 300만원이다
+2026-01-01 20:10:38.283 [restartedMain] INFO  o.e.b.d.a.s.HabitDataInitializer - EATING 데이터 추가 중...
+2026-01-01 20:10:38.533 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:38.572 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: eating_001 - 배달음식 1회 평균 주문 금액은 15,000원이다
+2026-01-01 20:10:38.828 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:38.869 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: eating_002 - 직접 조리 대비 배달/외식은 평균 10,000원 추가 
+2026-01-01 20:10:39.120 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:39.162 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: eating_003 - 비만으로 인한 연간 추가 의료비는 약 30만원이다
+2026-01-01 20:10:39.402 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:39.442 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: eating_004 - 야식은 수면의 질을 30% 저하시킨다
+2026-01-01 20:10:39.685 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:39.726 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: eating_005 - 과식으로 인한 소화불량 치료비는 회당 약 2만원이다
+2026-01-01 20:10:39.726 [restartedMain] INFO  o.e.b.d.a.s.HabitDataInitializer - SPENDING 데이터 추가 중...
+2026-01-01 20:10:39.966 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:40.007 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: spending_001 - 한국인 월평균 충동구매 금액은 약 15만원이다
+2026-01-01 20:10:40.283 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:40.325 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: spending_002 - 충동구매 후 후회 비율은 78%이다
+2026-01-01 20:10:40.580 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:40.622 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: spending_003 - 불필요한 구독서비스 평균 지출은 월 3만원이다
+2026-01-01 20:10:40.870 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:40.911 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: spending_004 - 신용카드 연체 시 연이자율은 평균 15%이다
+2026-01-01 20:10:41.154 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:41.196 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: spending_005 - 과소비자의 스트레스 지수는 평균보다 40% 높다
+2026-01-01 20:10:41.196 [restartedMain] INFO  o.e.b.d.a.s.HabitDataInitializer - LAZINESS 데이터 추가 중...
+2026-01-01 20:10:41.457 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:41.496 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: laziness_001 - 2024년 최저시급은 9,860원이다
+2026-01-01 20:10:41.743 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:41.784 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: laziness_002 - 한국 직장인 평균 시급은 약 25,000원이다
+2026-01-01 20:10:42.032 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:42.075 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: laziness_003 - 미루기로 인한 생산성 손실은 연간 약 500만원이다
+2026-01-01 20:10:42.318 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:42.359 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: laziness_004 - 지각 1회당 평균 손실 비용은 약 2만원이다
+2026-01-01 20:10:42.595 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:42.636 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: laziness_005 - 수면 부족으로 인한 집중력 저하는 업무효율을 25% 감
+2026-01-01 20:10:42.636 [restartedMain] INFO  o.e.b.d.a.s.HabitDataInitializer - DIGITAL 데이터 추가 중...
+2026-01-01 20:10:42.890 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:42.931 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: digital_001 - 한국인 하루 평균 스마트폰 사용시간은 4시간 23분이다
+2026-01-01 20:10:43.175 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:43.211 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: digital_002 - SNS 과다 사용자의 우울감은 평균보다 30% 높다
+2026-01-01 20:10:43.456 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:43.489 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: digital_003 - 게임 과금 월평균 금액은 약 5만원이다
+2026-01-01 20:10:43.742 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:43.777 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: digital_004 - 스마트폰 중독자의 수면 질은 평균보다 40% 낮다
+2026-01-01 20:10:44.025 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:44.068 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: digital_005 - 디지털 디톡스 시 생산성이 평균 20% 향상된다
+2026-01-01 20:10:44.069 [restartedMain] INFO  o.e.b.d.a.s.HabitDataInitializer - CAFFEINE 데이터 추가 중...
+2026-01-01 20:10:44.309 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:44.349 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: caffeine_001 - 커피 1잔 평균 가격은 4,500원이다
+2026-01-01 20:10:44.596 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:44.637 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: caffeine_002 - 에너지드링크 1캔 평균 가격은 2,500원이다
+2026-01-01 20:10:44.869 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:44.909 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: caffeine_003 - 카페인 과다섭취는 불안장애 위험을 25% 높인다
+2026-01-01 20:10:45.153 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:45.194 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: caffeine_004 - 오후 카페인 섭취는 수면 질을 35% 저하시킨다
+2026-01-01 20:10:45.504 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:45.546 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: caffeine_005 - 카페인 의존 시 두통약 비용이 월 약 1만원 추가된다
+2026-01-01 20:10:45.546 [restartedMain] INFO  o.e.b.d.a.s.HabitDataInitializer - GAMBLING 데이터 추가 중...
+2026-01-01 20:10:45.790 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:45.830 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: gambling_001 - 도박 중독자 월평균 손실 금액은 약 200만원이다
+2026-01-01 20:10:46.075 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:46.119 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: gambling_002 - 도박 중독 치료비용은 연간 약 500만원이다
+2026-01-01 20:10:46.395 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:46.437 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: gambling_003 - 주식 투기로 인한 개인 평균 손실은 연 300만원이다
+2026-01-01 20:10:46.682 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:46.724 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: gambling_004 - 도박 중독자의 가정파탄 비율은 60%이다
+2026-01-01 20:10:46.981 [restartedMain] DEBUG o.e.b.d.ai.service.ChromaService - 임베딩 생성 완료. 차원: 768
+2026-01-01 20:10:47.023 [restartedMain] INFO  o.e.b.d.ai.service.ChromaService - 문서 추가 완료: gambling_005 - 도박 충동 1회 참을 시 평균 5만원 절약 효과가 있다
+2026-01-01 20:10:47.024 [restartedMain] INFO  o.e.b.d.a.s.HabitDataInitializer - ========== 악습 데이터 초기화 완료! 총 40개 ==========
+2026-01-01 20:49:48.746 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m44s693ms).
+2026-01-01 20:56:43.451 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m54s632ms).
+2026-01-01 21:26:11.730 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Retrograde clock change detected (housekeeper delta=27s964ms), soft-evicting connections from pool.
+2026-01-01 21:52:10.780 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m26s792ms).
+2026-01-01 23:26:04.260 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m52s654ms).

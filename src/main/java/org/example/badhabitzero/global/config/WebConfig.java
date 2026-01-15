@@ -4,11 +4,19 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
+import io.netty.handler.timeout.ReadTimeoutHandler;
+import io.netty.handler.timeout.WriteTimeoutHandler;
+import org.example.badhabitzero.domain.ai.config.ChromaProperties;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.client.reactive.ReactorClientHttpConnector;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.netty.http.client.HttpClient;
 
+import java.time.Duration;
 import java.time.format.DateTimeFormatter;
+import java.util.concurrent.TimeUnit;
 
 @Configuration
 public class WebConfig {
@@ -27,5 +35,44 @@ public class WebConfig {
             builder.serializers(new LocalDateTimeSerializer(DateTimeFormatter.ofPattern(DATETIME_FORMAT)));
             builder.deserializers(new LocalDateTimeDeserializer(DateTimeFormatter.ofPattern(DATETIME_FORMAT)));
         };
+    }
+
+    /**
+     * Gemini API용 WebClient Bean
+     * - 연결 풀링으로 재사용
+     * - 타임아웃 설정 (15초 읽기, 10초 쓰기)
+     */
+    @Bean(name = "geminiWebClient")
+    public WebClient geminiWebClient() {
+        HttpClient httpClient = HttpClient.create()
+                .responseTimeout(Duration.ofSeconds(15))
+                .doOnConnected(conn ->
+                        conn.addHandlerLast(new ReadTimeoutHandler(15, TimeUnit.SECONDS))
+                                .addHandlerLast(new WriteTimeoutHandler(10, TimeUnit.SECONDS))
+                );
+
+        return WebClient.builder()
+                .clientConnector(new ReactorClientHttpConnector(httpClient))
+                .build();
+    }
+
+    /**
+     * Chroma API용 WebClient Bean
+     * - 연결 풀링으로 재사용
+     * - 타임아웃 설정 (10초 읽기, 5초 쓰기)
+     */
+    @Bean(name = "chromaWebClient")
+    public WebClient chromaWebClient(ChromaProperties chromaProperties) {
+        HttpClient httpClient = HttpClient.create()
+                .responseTimeout(Duration.ofSeconds(10))
+                .doOnConnected(conn ->
+                        conn.addHandlerLast(new ReadTimeoutHandler(10, TimeUnit.SECONDS))
+                                .addHandlerLast(new WriteTimeoutHandler(5, TimeUnit.SECONDS))
+                );
+
+        return WebClient.builder()
+                .baseUrl(chromaProperties.getHost())
+                .clientConnector(new ReactorClientHttpConnector(httpClient))
+                .build();
     }
 }

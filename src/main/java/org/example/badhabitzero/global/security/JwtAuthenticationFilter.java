@@ -40,12 +40,13 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             Long userId = jwtTokenProvider.getUserId(token);
             String email = jwtTokenProvider.getEmail(token);
 
-            // 인증 객체 생성
+            // 인증 객체 생성 (수정)
+            CustomUserDetails userDetails = new CustomUserDetails(userId, email);
             Authentication authentication = new UsernamePasswordAuthenticationToken(
-                    userId,                                              // principal (사용자 ID)
-                    null,                                                // credentials (비밀번호 - JWT에선 불필요)
-                    List.of(new SimpleGrantedAuthority("ROLE_USER"))     // 권한
-                    //TODO 권한 정책 정해지면 수정
+                    userDetails,                                         // CustomUserDetails 사용
+                    null,
+                    List.of(new SimpleGrantedAuthority("ROLE_USER"))
+                    //TODO 권한 정책
             );
 
             // SecurityContext에 인증 정보 저장

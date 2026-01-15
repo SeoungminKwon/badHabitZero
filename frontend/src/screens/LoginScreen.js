@@ -15,8 +15,10 @@ import { WebView } from 'react-native-webview';
 // 우리가 만든 파일들
 import { colors } from '../constants/colors';
 import { authApi } from '../api/authApi';
+import { useAuth } from '../context/AuthContext';
 
 export default function LoginScreen({ navigation }) {
+  const { login } = useAuth();
   // ========== State (상태) ==========
   // useState: 컴포넌트 내에서 변하는 값을 관리
   const [loading, setLoading] = useState(false);        // 로딩 중인지
@@ -68,14 +70,21 @@ export default function LoginScreen({ navigation }) {
           console.log('로그인 결과:', result);
 
           if (result.success) {
-            // 4. 로그인 성공! 화면 이동
-            if (result.data.newUser) {
-              // 신규 사용자 → 온보딩 화면
-              navigation.replace('Onboarding');
-            } else {
-              // 기존 사용자 → 홈 화면
-              navigation.replace('Home');
-            }
+            // 4. 로그인 성공!
+            // Context의 login 함수 호출 → 즉시 상태 변경
+            await login(
+              {
+                userId: result.data.userId,
+                email: result.data.email,
+                nickname: result.data.nickname,
+                profileImage: result.data.profileImage,
+              },
+              {
+                accessToken: result.data.accessToken,
+                refreshToken: result.data.refreshToken,
+              }
+            );
+            // AppNavigator가 즉시 반응하여 HomeScreen 렌더링!
           } else {
             Alert.alert('오류', '로그인에 실패했습니다.');
           }
