@@ -41,3 +41,19 @@ export const calculateValue = async (data) => {
   const response = await api.post('/api/ai/analyze/complete', data);
   return response.data;
 };
+
+// ============================================
+// 챗봇 기반 가치 산정 API
+// ============================================
+
+// 챗봇 세션 시작
+export const startChatSession = async (data) => {
+  const response = await api.post('/api/ai/chat/start', data);
+  return response.data;
+};
+
+// 챗봇 메시지 전송
+export const sendChatMessage = async (sessionId, message) => {
+  const response = await api.post('/api/ai/chat/message', { sessionId, message });
+  return response.data;
+};

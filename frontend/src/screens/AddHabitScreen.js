@@ -10,10 +10,11 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import { CATEGORIES } from '../constants/categories';
-import { analyzeHabit, calculateValue, createHabit } from '../api/habitApi';
+import { createHabit } from '../api/habitApi';
+import ChatModal from '../components/ChatModal';
 
 export default function AddHabitScreen({ navigation }) {
-  const [step, setStep] = useState(1); // 1: 기본정보, 2: AI질문, 3: 결과
+  const [step, setStep] = useState(1); // 1: 기본정보, 2: 결과
   const [loading, setLoading] = useState(false);
 
   // 기본 정보
@@ -21,15 +22,14 @@ export default function AddHabitScreen({ navigation }) {
   const [category, setCategory] = useState(null);
   const [reason, setReason] = useState('');
 
-  // AI 질문/답변
-  const [questions, setQuestions] = useState([]);
-  const [answers, setAnswers] = useState({});
+  // 챗봇 모달
+  const [chatModalVisible, setChatModalVisible] = useState(false);
 
   // AI 결과
   const [valueResult, setValueResult] = useState(null);
 
-  // 1단계: AI 분석 요청
-  const handleAnalyze = async () => {
+  // 1단계: 챗봇 모달 열기
+  const handleOpenChat = () => {
     if (!name.trim()) {
       Alert.alert('알림', '악습 이름을 입력해주세요.');
       return;
@@ -39,57 +39,17 @@ export default function AddHabitScreen({ navigation }) {
       return;
     }
 
-    setLoading(true);
-    try {
-      const response = await analyzeHabit({
-        habitName: name,
-        category: category,
-        reason: reason,
-      });
-
-      if (response.success && response.data.questions) {
-        setQuestions(response.data.questions);
-        setStep(2);
-      }
-    } catch (error) {
-      console.error('AI 분석 실패:', error);
-      Alert.alert('오류', 'AI 분석에 실패했습니다. 다시 시도해주세요.');
-    } finally {
-      setLoading(false);
-    }
+    setChatModalVisible(true);
   };
 
-  // 2단계: 가치 산정 요청
-  const handleCalculateValue = async () => {
-    // 모든 질문에 답변했는지 확인
-    const unanswered = questions.filter(q => !answers[q.id]);
-    if (unanswered.length > 0) {
-      Alert.alert('알림', '모든 질문에 답변해주세요.');
-      return;
-    }
-
-    setLoading(true);
-    try {
-      const response = await calculateValue({
-        habitName: name,
-        category: category,
-        reason: reason,
-        answers: answers,
-      });
-
-      if (response.success) {
-        setValueResult(response.data);
-        setStep(3);
-      }
-    } catch (error) {
-      console.error('가치 산정 실패:', error);
-      Alert.alert('오류', '가치 산정에 실패했습니다. 다시 시도해주세요.');
-    } finally {
-      setLoading(false);
-    }
+  // 챗봇 완료 콜백 - 가치 산정 결과 수신
+  const handleChatComplete = (result) => {
+    setValueResult(result);
+    setChatModalVisible(false);
+    setStep(2); // 결과 화면으로
   };
 
-  // 3단계: 악습 등록
+  // 2단계: 악습 등록
   const handleCreateHabit = async () => {
     setLoading(true);
     try {
@@ -116,11 +76,6 @@ export default function AddHabitScreen({ navigation }) {
     } finally {
       setLoading(false);
     }
-  };
-
-  // 답변 업데이트
-  const updateAnswer = (questionId, value) => {
-    setAnswers(prev => ({ ...prev, [questionId]: value }));
   };
 
   // 1단계: 기본 정보 입력
@@ -172,67 +127,7 @@ export default function AddHabitScreen({ navigation }) {
 
       <TouchableOpacity
         style={styles.primaryButton}
-        onPress={handleAnalyze}
-        disabled={loading}
-      >
-        {loading ? (
-          <ActivityIndicator color="#FFFFFF" />
-        ) : (
-          <Text style={styles.primaryButtonText}>다음 단계로</Text>
-        )}
-      </TouchableOpacity>
-    </ScrollView>
-  );
-
-  // 2단계: AI 질문 답변
-  const renderStep2 = () => (
-    <ScrollView style={styles.stepContainer}>
-      <Text style={styles.stepTitle}>몇 가지 질문이 있어요 🤔</Text>
-      <Text style={styles.stepSubtitle}>
-        정확한 가치 산정을 위해 답변해주세요
-      </Text>
-
-      {questions.map((question) => (
-        <View key={question.id} style={styles.questionContainer}>
-          <Text style={styles.questionText}>{question.question}</Text>
-          
-          {question.type === 'choice' && question.options ? (
-            <View style={styles.optionsContainer}>
-              {question.options.map((option) => (
-                <TouchableOpacity
-                  key={option}
-                  style={[
-                    styles.optionButton,
-                    answers[question.id] === option && styles.optionButtonActive,
-                  ]}
-                  onPress={() => updateAnswer(question.id, option)}
-                >
-                  <Text
-                    style={[
-                      styles.optionText,
-                      answers[question.id] === option && styles.optionTextActive,
-                    ]}
-                  >
-                    {option}
-                  </Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          ) : (
-            <TextInput
-              style={styles.input}
-              placeholder="숫자를 입력해주세요"
-              value={answers[question.id]?.toString() || ''}
-              onChangeText={(text) => updateAnswer(question.id, Number(text) || text)}
-              keyboardType={question.type === 'number' ? 'numeric' : 'default'}
-            />
-          )}
-        </View>
-      ))}
-
-      <TouchableOpacity
-        style={styles.primaryButton}
-        onPress={handleCalculateValue}
+        onPress={handleOpenChat}
         disabled={loading}
       >
         {loading ? (
@@ -241,18 +136,11 @@ export default function AddHabitScreen({ navigation }) {
           <Text style={styles.primaryButtonText}>가치 산정하기</Text>
         )}
       </TouchableOpacity>
-
-      <TouchableOpacity
-        style={styles.secondaryButton}
-        onPress={() => setStep(1)}
-      >
-        <Text style={styles.secondaryButtonText}>이전으로</Text>
-      </TouchableOpacity>
     </ScrollView>
   );
 
-  // 3단계: 결과 및 등록
-  const renderStep3 = () => (
+  // 2단계: 결과 및 등록
+  const renderStep2 = () => (
     <ScrollView style={styles.stepContainer}>
       <Text style={styles.stepTitle}>가치 산정 완료! 💰</Text>
 
@@ -318,7 +206,10 @@ export default function AddHabitScreen({ navigation }) {
 
       <TouchableOpacity
         style={styles.secondaryButton}
-        onPress={() => setStep(2)}
+        onPress={() => {
+          setStep(1);
+          setChatModalVisible(true);
+        }}
       >
         <Text style={styles.secondaryButtonText}>다시 산정하기</Text>
       </TouchableOpacity>
@@ -329,7 +220,7 @@ export default function AddHabitScreen({ navigation }) {
     <View style={styles.container}>
       {/* 진행 표시 */}
       <View style={styles.progressContainer}>
-        {[1, 2, 3].map((s) => (
+        {[1, 2].map((s) => (
           <View
             key={s}
             style={[
@@ -342,7 +233,18 @@ export default function AddHabitScreen({ navigation }) {
 
       {step === 1 && renderStep1()}
       {step === 2 && renderStep2()}
-      {step === 3 && renderStep3()}
+
+      {/* 챗봇 모달 */}
+      <ChatModal
+        visible={chatModalVisible}
+        onClose={() => setChatModalVisible(false)}
+        onComplete={handleChatComplete}
+        habitData={{
+          name: name,
+          category: category,
+          reason: reason,
+        }}
+      />
     </View>
   );
 }

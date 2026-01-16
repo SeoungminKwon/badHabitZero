@@ -41,7 +41,7 @@ public class GeminiService {
                 ),
                 "generationConfig", Map.of(
                         "temperature", 0.7,
-                        "maxOutputTokens", 1024
+                        "maxOutputTokens", 4096
                 )
         );
 
@@ -52,7 +52,7 @@ public class GeminiService {
                     .bodyValue(requestBody)
                     .retrieve()
                     .bodyToMono(String.class)
-                    .block(java.time.Duration.ofSeconds(15));
+                    .block(java.time.Duration.ofSeconds(60));
 
             // 응답에서 텍스트 추출
             return extractTextFromResponse(response);

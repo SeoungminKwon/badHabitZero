@@ -3,10 +3,8 @@ package org.example.badhabitzero.domain.ai.controller;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-import org.example.badhabitzero.domain.ai.dto.AnalyzeCompleteRequest;
-import org.example.badhabitzero.domain.ai.dto.AnalyzeRequest;
-import org.example.badhabitzero.domain.ai.dto.AnalyzeResponse;
-import org.example.badhabitzero.domain.ai.dto.ValueResult;
+import org.example.badhabitzero.domain.ai.dto.*;
+
 import org.example.badhabitzero.domain.ai.service.ChromaService;
 import org.example.badhabitzero.domain.ai.service.GeminiService;
 import org.example.badhabitzero.domain.ai.service.ValueAnalysisService;
@@ -84,5 +82,23 @@ public class AIController {
 
         List<Map<String, Object>> results = chromaService.searchByCategory(query, category, topK);
         return ResponseEntity.ok(ApiResponse.success(results));
+    }
+
+    // ============================================
+    // 챗봇 기반 가치 산정 API
+    // ============================================
+
+    @Operation(summary = "챗봇 세션 시작", description = "가치 산정 챗봇 대화 세션 시작")
+    @PostMapping("/chat/start")
+    public ResponseEntity<ApiResponse<ChatSessionResponse>> startChat(@RequestBody ChatSessionRequest request) {
+        ChatSessionResponse response = valueAnalysisService.startChatSession(request);
+        return ResponseEntity.ok(ApiResponse.success(response));
+    }
+
+    @Operation(summary = "챗봇 메시지 전송", description = "사용자 답변 전송 및 다음 질문 수신")
+    @PostMapping("/chat/message")
+    public ResponseEntity<ApiResponse<ChatMessageResponse>> sendMessage(@RequestBody ChatMessageRequest request) {
+        ChatMessageResponse response = valueAnalysisService.handleChatMessage(request);
+        return ResponseEntity.ok(ApiResponse.success(response));
     }
 }

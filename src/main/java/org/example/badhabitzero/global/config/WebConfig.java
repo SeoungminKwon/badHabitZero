@@ -40,15 +40,15 @@ public class WebConfig {
     /**
      * Gemini API용 WebClient Bean
      * - 연결 풀링으로 재사용
-     * - 타임아웃 설정 (15초 읽기, 10초 쓰기)
+     * - 타임아웃 설정 (60초 읽기, 30초 쓰기)
      */
     @Bean(name = "geminiWebClient")
     public WebClient geminiWebClient() {
         HttpClient httpClient = HttpClient.create()
-                .responseTimeout(Duration.ofSeconds(15))
+                .responseTimeout(Duration.ofSeconds(60))
                 .doOnConnected(conn ->
-                        conn.addHandlerLast(new ReadTimeoutHandler(15, TimeUnit.SECONDS))
-                                .addHandlerLast(new WriteTimeoutHandler(10, TimeUnit.SECONDS))
+                        conn.addHandlerLast(new ReadTimeoutHandler(60, TimeUnit.SECONDS))
+                                .addHandlerLast(new WriteTimeoutHandler(30, TimeUnit.SECONDS))
                 );
 
         return WebClient.builder()

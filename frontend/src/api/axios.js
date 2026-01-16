@@ -2,6 +2,14 @@ import axios from 'axios';
 import { config } from '../constants/config';
 import { storage } from '../utils/storage';
 
+// 로그아웃 콜백 저장 변수
+let logoutCallback = null;
+
+// 로그아웃 콜백 설정 함수
+export const setLogoutCallback = (callback) => {
+  logoutCallback = callback;
+};
+
 // axios 인스턴스 생성
 const api = axios.create({
   baseURL: config.API_BASE_URL,
@@ -55,6 +63,9 @@ api.interceptors.response.use(
         if (!refreshToken) {
           // 리프레시 토큰도 없으면 바로 로그아웃
           await storage.clear();
+          if (logoutCallback) {
+            logoutCallback();
+          }
           return Promise.reject(error);
         }
 
@@ -78,7 +89,9 @@ api.interceptors.response.use(
       } catch (refreshError) {
         // 토큰 갱신 실패 → 로그아웃 처리
         await storage.clear();
-        // AppNavigator가 자동으로 로그인 화면으로 이동
+        if (logoutCallback) {
+          logoutCallback();
+        }
       }
     }
 
