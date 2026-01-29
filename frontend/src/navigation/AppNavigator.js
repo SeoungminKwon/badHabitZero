@@ -6,6 +6,8 @@ import LoginScreen from '../screens/LoginScreen';
 import HomeScreen from '../screens/HomeScreen';
 import OnboardingScreen from '../screens/OnboardingScreen';
 import AddHabitScreen from '../screens/AddHabitScreen';
+import HabitDetailScreen from '../screens/HabitDetailScreen';
+import EditHabitScreen from '../screens/EditHabitScreen';
 
 import { useAuth } from '../context/AuthContext';
 
@@ -26,8 +28,8 @@ export default function AppNavigator() {
         ) : (
           <>
             <Stack.Screen name="Home" component={HomeScreen} />
-            <Stack.Screen 
-              name="AddHabit" 
+            <Stack.Screen
+              name="AddHabit"
               component={AddHabitScreen}
               options={{
                 headerShown: true,
@@ -35,6 +37,8 @@ export default function AppNavigator() {
                 headerBackTitle: '뒤로',
               }}
             />
+            <Stack.Screen name="HabitDetail" component={HabitDetailScreen} />
+            <Stack.Screen name="EditHabit" component={EditHabitScreen} />
             <Stack.Screen name="Onboarding" component={OnboardingScreen} />
           </>
         )}
