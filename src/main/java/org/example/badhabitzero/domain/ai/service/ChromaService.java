@@ -128,13 +128,13 @@ public class ChromaService {
         // Gemini Embedding API URL
         // text-embedding-004 모델 사용
         String url = String.format(
-                "https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=%s",
+                "https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=%s",
                 geminiService.getApiKey()
         );
 
         // API 요청 본문
         Map<String, Object> body = Map.of(
-                "model", "models/text-embedding-004",
+                "model", "models/gemini-embedding-001",
                 "content", Map.of(
                         "parts", List.of(Map.of("text", text))
                 )
