@@ -151,7 +151,8 @@ public class ValueAnalysisService {
             1. 참고 데이터가 있으면 활용하고, 없으면 일반 지식으로 추정하세요.
             2. 1회당 비용을 계산하세요.
             3. 반드시 아래 JSON 형식으로만 응답하세요. 다른 텍스트 없이 JSON만 출력하세요.
-            
+            4. explanation은 반드시 100자 이내로 간결하게 작성하세요.
+
             [응답 형식]
             {
               "value": 15000,
@@ -274,7 +275,7 @@ public class ValueAnalysisService {
     }
 
     /**
-     * JSON 추출 (AI 응답에서 JSON 부분만) - 개선 버전
+     * JSON 추출 (AI 응답에서 JSON 부분만) - 브레이스 매칭 버전
      */
     private String extractJson(String response) {
         if (response == null || response.isEmpty()) {
@@ -282,23 +283,50 @@ public class ValueAnalysisService {
             return "{}";
         }
 
-        // 1. 마크다운 코드블록 제거 (```json ... ```)
         response = response.replaceAll("```json", "")
                 .replaceAll("```", "")
                 .trim();
 
-        // 2. JSON 객체 추출 { ... }
         int start = response.indexOf("{");
-        int end = response.lastIndexOf("}");
+        if (start == -1) {
+            log.warn("JSON 추출 실패. 원본: {}", response);
+            return "{}";
+        }
 
-        if (start != -1 && end != -1 && end > start) {
+        // 브레이스 매칭으로 루트 객체의 끝 찾기
+        int depth = 0;
+        boolean inString = false;
+        boolean escape = false;
+        int end = -1;
+
+        for (int i = start; i < response.length(); i++) {
+            char c = response.charAt(i);
+            if (escape) { escape = false; continue; }
+            if (c == '\\' && inString) { escape = true; continue; }
+            if (c == '"') { inString = !inString; continue; }
+            if (inString) continue;
+            if (c == '{') depth++;
+            else if (c == '}') {
+                depth--;
+                if (depth == 0) { end = i; break; }
+            }
+        }
+
+        if (end != -1) {
             String json = response.substring(start, end + 1);
             log.debug("추출된 JSON: {}", json);
             return json;
         }
 
-        log.warn("JSON 추출 실패. 원본: {}", response);
-        return "{}";
+        // 잘린 JSON 복구 시도: 부족한 닫는 브레이스 추가
+        log.warn("JSON이 잘림 (depth={}), 복구 시도", depth);
+        StringBuilder repaired = new StringBuilder(response.substring(start));
+        // 열린 문자열 닫기
+        if (inString) repaired.append("\"");
+        // 부족한 닫는 브레이스 추가
+        for (int i = 0; i < depth; i++) repaired.append("}");
+        log.debug("복구된 JSON: {}", repaired);
+        return repaired.toString();
     }
 
     /**
@@ -552,6 +580,7 @@ public class ValueAnalysisService {
             3. 명확하지 않은 경우 합리적으로 추정하세요.
             4. 1회당 비용을 계산하세요.
             5. 반드시 아래 JSON 형식으로만 응답하세요. 다른 텍스트 없이 JSON만 출력하세요.
+            6. explanation은 반드시 100자 이내로 간결하게 작성하세요.
 
             [응답 형식]
             {
